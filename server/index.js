@@ -4,22 +4,22 @@ const { renderToString } = require('react-dom/server');
 
 const http = require('http');
 
-// import Index from './test.js';
+import Index from './test.js';
 
 //组件
-class Index extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+// class Index extends React.Component {
+//     constructor(props) {
+//         super(props);
+//     }
 
-    handlerClick(){
-       alert('一起来玩 react ssr 啊');
-    }
+//     handlerClick(){
+//        alert('一起来玩 react ssr 啊');
+//     }
 
-    render() {
-        return <h1 onClick={this.handlerClick}>click here!</h1>
-    }
-}
+//     render() {
+//         return <h1 onClick={this.handlerClick}>click here!</h1>
+//     }
+// }
 
 //服务
 http.createServer((req, res) => {
